@@ -27,7 +27,7 @@ def main():
 	kList = list(regex.sub('', argv[2]).upper())
 	ans = validateInput(raw_input("Encrypt (e) or Decrypt (d)\n>").lower())
 	sign = 1 if ans == 'e' else -1
-	crypt(argv[1], argv[2], sign)
+	crypt(mList, kList, sign)
 
 if __name__ == "__main__":
 	main()
